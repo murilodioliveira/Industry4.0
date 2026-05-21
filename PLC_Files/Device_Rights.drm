@@ -1,0 +1,517 @@
+<?xml version="1.0"?>
+<DeviceRightsManagement>
+  <Object Name="Device">
+    <Allowed Group="Administrator" Permissions="None View Modify Execute AddRemoveChildren " />
+    <Allowed Group="Service" Permissions="None View AddRemoveChildren " />
+    <Allowed Group="Developer" Permissions="None View AddRemoveChildren " />
+    <Allowed Group="Watch" Permissions="None View " />
+    <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify Execute AddRemoveChildren " />
+    <Denied Group="Administrator" Permissions="None " />
+    <Denied Group="Service" Permissions="None Modify Execute " />
+    <Denied Group="Developer" Permissions="None Modify Execute " />
+    <Denied Group="Watch" Permissions="None Modify Execute AddRemoveChildren " />
+    <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+    <Object Name="PlcLogic">
+      <Allowed Group="Administrator" Permissions="None View Modify Execute AddRemoveChildren " />
+      <Allowed Group="Developer" Permissions="None View Modify Execute AddRemoveChildren " />
+      <Allowed Group="Service" Permissions="None View " />
+      <Allowed Group="Watch" Permissions="None View " />
+      <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify Execute AddRemoveChildren " />
+      <Denied Group="Administrator" Permissions="None " />
+      <Denied Group="Developer" Permissions="None " />
+      <Denied Group="Service" Permissions="None Modify Execute AddRemoveChildren " />
+      <Denied Group="Watch" Permissions="None Modify Execute AddRemoveChildren " />
+      <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+      <Object Name="__Backup&amp;Restore">
+        <Allowed Group="Developer" Permissions="None View Modify " />
+        <Allowed Group="Service" Permissions="None View Modify " />
+        <Allowed Group="Watch" Permissions="None " />
+        <Allowed Group="Administrator" Permissions="None " />
+        <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify Execute AddRemoveChildren " />
+        <Denied Group="Developer" Permissions="None " />
+        <Denied Group="Service" Permissions="None " />
+        <Denied Group="Watch" Permissions="None View Modify Execute AddRemoveChildren " />
+        <Denied Group="Administrator" Permissions="None " />
+        <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+      </Object>
+      <Object Name="Application">
+        <Allowed Group="Administrator" Permissions="None " />
+        <Allowed Group="Developer" Permissions="None " />
+        <Allowed Group="Service" Permissions="None " />
+        <Allowed Group="Watch" Permissions="None " />
+        <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify Execute AddRemoveChildren " />
+        <Denied Group="Administrator" Permissions="None " />
+        <Denied Group="Developer" Permissions="None " />
+        <Denied Group="Service" Permissions="None " />
+        <Denied Group="Watch" Permissions="None " />
+        <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+        <Object Name="__C-ModuleIntegration__">
+          <Allowed Group="Administrator" Permissions="None " />
+          <Allowed Group="Developer" Permissions="None " />
+          <Allowed Group="Service" Permissions="None " />
+          <Allowed Group="Watch" Permissions="None " />
+          <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify Execute AddRemoveChildren " />
+          <Denied Group="Administrator" Permissions="None " />
+          <Denied Group="Developer" Permissions="None " />
+          <Denied Group="Service" Permissions="None " />
+          <Denied Group="Watch" Permissions="None " />
+          <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+        </Object>
+        <Object Name="__SymbolSets">
+          <Allowed Group="Administrator" Permissions="None " />
+          <Allowed Group="Developer" Permissions="None " />
+          <Allowed Group="Service" Permissions="None " />
+          <Allowed Group="Watch" Permissions="None " />
+          <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify Execute AddRemoveChildren " />
+          <Denied Group="Administrator" Permissions="None " />
+          <Denied Group="Developer" Permissions="None " />
+          <Denied Group="Service" Permissions="None " />
+          <Denied Group="Watch" Permissions="None " />
+          <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+        </Object>
+      </Object>
+    </Object>
+    <Object Name="Logger">
+      <Allowed Group="Administrator" Permissions="None " />
+      <Allowed Group="Service" Permissions="None " />
+      <Allowed Group="Developer" Permissions="None " />
+      <Allowed Group="Watch" Permissions="None " />
+      <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify Execute AddRemoveChildren " />
+      <Denied Group="Administrator" Permissions="None " />
+      <Denied Group="Service" Permissions="None " />
+      <Denied Group="Developer" Permissions="None " />
+      <Denied Group="Watch" Permissions="None " />
+      <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+      <Object Name="AuditLogger">
+        <Allowed Group="Administrator" Permissions="None " />
+        <Allowed Group="Service" Permissions="None " />
+        <Allowed Group="Developer" Permissions="None " />
+        <Allowed Group="Watch" Permissions="None " />
+        <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify Execute AddRemoveChildren " />
+        <Denied Group="Administrator" Permissions="None " />
+        <Denied Group="Service" Permissions="None " />
+        <Denied Group="Developer" Permissions="None " />
+        <Denied Group="Watch" Permissions="None " />
+        <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+      </Object>
+    </Object>
+    <Object Name="Settings">
+      <Allowed Group="Administrator" Permissions="None View Modify Execute AddRemoveChildren " />
+      <Allowed Group="Developer" Permissions="None View Modify Execute AddRemoveChildren " />
+      <Allowed Group="Service" Permissions="None Modify " />
+      <Allowed Group="Watch" Permissions="None " />
+      <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify Execute AddRemoveChildren " />
+      <Denied Group="Administrator" Permissions="None " />
+      <Denied Group="Developer" Permissions="None " />
+      <Denied Group="Service" Permissions="None " />
+      <Denied Group="Watch" Permissions="None " />
+      <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+      <Object Name="SecuritySettings">
+        <Allowed Group="Administrator" Permissions="None View Modify Execute AddRemoveChildren " />
+        <Allowed Group="Service" Permissions="None " />
+        <Allowed Group="Developer" Permissions="None " />
+        <Allowed Group="Watch" Permissions="None " />
+        <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify Execute AddRemoveChildren " />
+        <Denied Group="Administrator" Permissions="None " />
+        <Denied Group="Service" Permissions="None Modify " />
+        <Denied Group="Developer" Permissions="None Modify " />
+        <Denied Group="Watch" Permissions="None Modify " />
+        <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+      </Object>
+    </Object>
+    <Object Name="CodeMeter">
+      <Allowed Group="Administrator" Permissions="None " />
+      <Allowed Group="Service" Permissions="None " />
+      <Allowed Group="Developer" Permissions="None " />
+      <Allowed Group="Watch" Permissions="None " />
+      <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify Execute AddRemoveChildren " />
+      <Denied Group="Administrator" Permissions="None " />
+      <Denied Group="Service" Permissions="None " />
+      <Denied Group="Developer" Permissions="None " />
+      <Denied Group="Watch" Permissions="None " />
+      <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+    </Object>
+    <Object Name="RemoteConnections">
+      <Allowed Group="Administrator" Permissions="None " />
+      <Allowed Group="Service" Permissions="None " />
+      <Allowed Group="Developer" Permissions="None " />
+      <Allowed Group="Watch" Permissions="None " />
+      <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify Execute AddRemoveChildren " />
+      <Denied Group="Administrator" Permissions="None " />
+      <Denied Group="Service" Permissions="None " />
+      <Denied Group="Developer" Permissions="None " />
+      <Denied Group="Watch" Permissions="None " />
+      <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+      <Object Name="OPCUAServer">
+        <Allowed Group="Administrator" Permissions="None " />
+        <Allowed Group="Service" Permissions="None " />
+        <Allowed Group="Developer" Permissions="None " />
+        <Allowed Group="Watch" Permissions="None " />
+        <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify Execute AddRemoveChildren " />
+        <Denied Group="Administrator" Permissions="None " />
+        <Denied Group="Service" Permissions="None " />
+        <Denied Group="Developer" Permissions="None " />
+        <Denied Group="Watch" Permissions="None " />
+        <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+      </Object>
+    </Object>
+    <Object Name="X509">
+      <Allowed Group="Administrator" Permissions="None View Modify Execute AddRemoveChildren " />
+      <Allowed Group="Developer" Permissions="None " />
+      <Allowed Group="Service" Permissions="None " />
+      <Allowed Group="Watch" Permissions="None " />
+      <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify Execute AddRemoveChildren " />
+      <Denied Group="Administrator" Permissions="None " />
+      <Denied Group="Developer" Permissions="None View Modify Execute AddRemoveChildren " />
+      <Denied Group="Service" Permissions="None View Modify Execute AddRemoveChildren " />
+      <Denied Group="Watch" Permissions="None View Modify Execute AddRemoveChildren " />
+      <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+      <Object Name="ImportCertificate">
+        <Allowed Group="Administrator" Permissions="None " />
+        <Allowed Group="Developer" Permissions="None " />
+        <Allowed Group="Service" Permissions="None " />
+        <Allowed Group="Watch" Permissions="None " />
+        <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify Execute AddRemoveChildren " />
+        <Denied Group="Administrator" Permissions="None " />
+        <Denied Group="Developer" Permissions="None " />
+        <Denied Group="Service" Permissions="None " />
+        <Denied Group="Watch" Permissions="None " />
+        <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+      </Object>
+      <Object Name="ExportCertificate">
+        <Allowed Group="Administrator" Permissions="None " />
+        <Allowed Group="Developer" Permissions="None " />
+        <Allowed Group="Service" Permissions="None " />
+        <Allowed Group="Watch" Permissions="None " />
+        <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify Execute AddRemoveChildren " />
+        <Denied Group="Administrator" Permissions="None " />
+        <Denied Group="Developer" Permissions="None " />
+        <Denied Group="Service" Permissions="None " />
+        <Denied Group="Watch" Permissions="None " />
+        <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+      </Object>
+      <Object Name="DeleteCertificate">
+        <Allowed Group="Administrator" Permissions="None " />
+        <Allowed Group="Developer" Permissions="None " />
+        <Allowed Group="Service" Permissions="None " />
+        <Allowed Group="Watch" Permissions="None " />
+        <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify Execute AddRemoveChildren " />
+        <Denied Group="Administrator" Permissions="None " />
+        <Denied Group="Developer" Permissions="None " />
+        <Denied Group="Service" Permissions="None " />
+        <Denied Group="Watch" Permissions="None " />
+        <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+      </Object>
+      <Object Name="MoveCertificate">
+        <Allowed Group="Administrator" Permissions="None " />
+        <Allowed Group="Developer" Permissions="None " />
+        <Allowed Group="Service" Permissions="None " />
+        <Allowed Group="Watch" Permissions="None " />
+        <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify Execute AddRemoveChildren " />
+        <Denied Group="Administrator" Permissions="None " />
+        <Denied Group="Developer" Permissions="None " />
+        <Denied Group="Service" Permissions="None " />
+        <Denied Group="Watch" Permissions="None " />
+        <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+      </Object>
+      <Object Name="ListCertificates">
+        <Allowed Group="Administrator" Permissions="None " />
+        <Allowed Group="Developer" Permissions="None " />
+        <Allowed Group="Service" Permissions="None " />
+        <Allowed Group="Watch" Permissions="None " />
+        <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify Execute AddRemoveChildren " />
+        <Denied Group="Administrator" Permissions="None " />
+        <Denied Group="Developer" Permissions="None " />
+        <Denied Group="Service" Permissions="None " />
+        <Denied Group="Watch" Permissions="None " />
+        <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+      </Object>
+      <Object Name="ListUseCases">
+        <Allowed Group="Administrator" Permissions="None " />
+        <Allowed Group="Developer" Permissions="None " />
+        <Allowed Group="Service" Permissions="None " />
+        <Allowed Group="Watch" Permissions="None " />
+        <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify Execute AddRemoveChildren " />
+        <Denied Group="Administrator" Permissions="None " />
+        <Denied Group="Developer" Permissions="None " />
+        <Denied Group="Service" Permissions="None " />
+        <Denied Group="Watch" Permissions="None " />
+        <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+      </Object>
+      <Object Name="CreateSelfSignedCertificate">
+        <Allowed Group="Administrator" Permissions="None " />
+        <Allowed Group="Developer" Permissions="None " />
+        <Allowed Group="Service" Permissions="None " />
+        <Allowed Group="Watch" Permissions="None " />
+        <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify Execute AddRemoveChildren " />
+        <Denied Group="Administrator" Permissions="None " />
+        <Denied Group="Developer" Permissions="None " />
+        <Denied Group="Service" Permissions="None " />
+        <Denied Group="Watch" Permissions="None " />
+        <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+      </Object>
+      <Object Name="CreateCertificateSigningRequest">
+        <Allowed Group="Administrator" Permissions="None " />
+        <Allowed Group="Developer" Permissions="None " />
+        <Allowed Group="Service" Permissions="None " />
+        <Allowed Group="Watch" Permissions="None " />
+        <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify Execute AddRemoveChildren " />
+        <Denied Group="Administrator" Permissions="None " />
+        <Denied Group="Developer" Permissions="None " />
+        <Denied Group="Service" Permissions="None " />
+        <Denied Group="Watch" Permissions="None " />
+        <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+      </Object>
+      <Object Name="GetStatus">
+        <Allowed Group="Administrator" Permissions="None " />
+        <Allowed Group="Developer" Permissions="None " />
+        <Allowed Group="Service" Permissions="None " />
+        <Allowed Group="Watch" Permissions="None " />
+        <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify Execute AddRemoveChildren " />
+        <Denied Group="Administrator" Permissions="None " />
+        <Denied Group="Developer" Permissions="None " />
+        <Denied Group="Service" Permissions="None " />
+        <Denied Group="Watch" Permissions="None " />
+        <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+      </Object>
+      <Object Name="ImportPkcs12Keystore">
+        <Allowed Group="Administrator" Permissions="None " />
+        <Allowed Group="Developer" Permissions="None " />
+        <Allowed Group="Service" Permissions="None " />
+        <Allowed Group="Watch" Permissions="None " />
+        <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify Execute AddRemoveChildren " />
+        <Denied Group="Administrator" Permissions="None " />
+        <Denied Group="Developer" Permissions="None " />
+        <Denied Group="Service" Permissions="None " />
+        <Denied Group="Watch" Permissions="None " />
+        <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+      </Object>
+      <Object Name="ExportPkcs12Keystore">
+        <Allowed Group="Administrator" Permissions="None " />
+        <Allowed Group="Developer" Permissions="None " />
+        <Allowed Group="Service" Permissions="None " />
+        <Allowed Group="Watch" Permissions="None " />
+        <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify Execute AddRemoveChildren " />
+        <Denied Group="Administrator" Permissions="None " />
+        <Denied Group="Developer" Permissions="None " />
+        <Denied Group="Service" Permissions="None " />
+        <Denied Group="Watch" Permissions="None " />
+        <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+      </Object>
+    </Object>
+    <Object Name="PlcShell">
+      <Allowed Group="Administrator" Permissions="None View Modify Execute AddRemoveChildren " />
+      <Allowed Group="Service" Permissions="None " />
+      <Allowed Group="Developer" Permissions="None " />
+      <Allowed Group="Watch" Permissions="None " />
+      <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify Execute AddRemoveChildren " />
+      <Denied Group="Administrator" Permissions="None " />
+      <Denied Group="Service" Permissions="None View Modify Execute AddRemoveChildren " />
+      <Denied Group="Developer" Permissions="None View Modify Execute AddRemoveChildren " />
+      <Denied Group="Watch" Permissions="None View Modify Execute AddRemoveChildren " />
+      <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+    </Object>
+    <Object Name="UserManagement">
+      <Allowed Group="Watch" Permissions="None " />
+      <Allowed Group="Service" Permissions="None " />
+      <Allowed Group="Developer" Permissions="None " />
+      <Allowed Group="Administrator" Permissions="None View Modify Execute AddRemoveChildren " />
+      <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify Execute AddRemoveChildren " />
+      <Denied Group="Watch" Permissions="None View Modify Execute AddRemoveChildren " />
+      <Denied Group="Service" Permissions="None View Modify Execute AddRemoveChildren " />
+      <Denied Group="Developer" Permissions="None View Modify Execute AddRemoveChildren " />
+      <Denied Group="Administrator" Permissions="None View Modify Execute AddRemoveChildren " />
+      <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+      <Object Name="Groups">
+        <Allowed Group="Administrator" Permissions="None View " />
+        <Allowed Group="Watch" Permissions="None " />
+        <Allowed Group="Service" Permissions="None " />
+        <Allowed Group="Developer" Permissions="None " />
+        <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify Execute AddRemoveChildren " />
+        <Denied Group="Administrator" Permissions="None " />
+        <Denied Group="Watch" Permissions="None " />
+        <Denied Group="Service" Permissions="None " />
+        <Denied Group="Developer" Permissions="None " />
+        <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+        <Object Name="Watch">
+          <Allowed Group="Administrator" Permissions="None " />
+          <Allowed Group="Watch" Permissions="None " />
+          <Allowed Group="Service" Permissions="None " />
+          <Allowed Group="Developer" Permissions="None " />
+          <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify Execute AddRemoveChildren " />
+          <Denied Group="Administrator" Permissions="None " />
+          <Denied Group="Watch" Permissions="None " />
+          <Denied Group="Service" Permissions="None " />
+          <Denied Group="Developer" Permissions="None " />
+          <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+        </Object>
+        <Object Name="Service">
+          <Allowed Group="Administrator" Permissions="None " />
+          <Allowed Group="Watch" Permissions="None " />
+          <Allowed Group="Service" Permissions="None " />
+          <Allowed Group="Developer" Permissions="None " />
+          <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify Execute AddRemoveChildren " />
+          <Denied Group="Administrator" Permissions="None " />
+          <Denied Group="Watch" Permissions="None " />
+          <Denied Group="Service" Permissions="None " />
+          <Denied Group="Developer" Permissions="None " />
+          <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+        </Object>
+        <Object Name="Developer">
+          <Allowed Group="Administrator" Permissions="None " />
+          <Allowed Group="Watch" Permissions="None " />
+          <Allowed Group="Service" Permissions="None " />
+          <Allowed Group="Developer" Permissions="None " />
+          <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify Execute AddRemoveChildren " />
+          <Denied Group="Administrator" Permissions="None " />
+          <Denied Group="Watch" Permissions="None " />
+          <Denied Group="Service" Permissions="None " />
+          <Denied Group="Developer" Permissions="None " />
+          <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+        </Object>
+        <Object Name="Administrator">
+          <Allowed Group="Administrator" Permissions="None " />
+          <Allowed Group="Watch" Permissions="None " />
+          <Allowed Group="Service" Permissions="None " />
+          <Allowed Group="Developer" Permissions="None " />
+          <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify Execute AddRemoveChildren " />
+          <Denied Group="Administrator" Permissions="None " />
+          <Denied Group="Watch" Permissions="None " />
+          <Denied Group="Service" Permissions="None " />
+          <Denied Group="Developer" Permissions="None " />
+          <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+        </Object>
+        <Object Name="Anonymous_OPCUAServer">
+          <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify Execute AddRemoveChildren " />
+          <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+        </Object>
+      </Object>
+      <Object Name="Users">
+        <Allowed Group="Administrator" Permissions="None View " />
+        <Allowed Group="Watch" Permissions="None " />
+        <Allowed Group="Service" Permissions="None " />
+        <Allowed Group="Developer" Permissions="None " />
+        <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify Execute AddRemoveChildren " />
+        <Denied Group="Administrator" Permissions="None " />
+        <Denied Group="Watch" Permissions="None " />
+        <Denied Group="Service" Permissions="None " />
+        <Denied Group="Developer" Permissions="None " />
+        <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+      </Object>
+      <Object Name="Access Rights">
+        <Allowed Group="Administrator" Permissions="None View Modify " />
+        <Allowed Group="Watch" Permissions="None " />
+        <Allowed Group="Service" Permissions="None " />
+        <Allowed Group="Developer" Permissions="None " />
+        <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify Execute AddRemoveChildren " />
+        <Denied Group="Administrator" Permissions="None " />
+        <Denied Group="Watch" Permissions="None " />
+        <Denied Group="Service" Permissions="None " />
+        <Denied Group="Developer" Permissions="None " />
+        <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+      </Object>
+    </Object>
+  </Object>
+  <Object Name="/">
+    <Allowed Group="Administrator" Permissions="None View Modify Execute AddRemoveChildren " />
+    <Allowed Group="Service" Permissions="None View Modify Execute AddRemoveChildren " />
+    <Allowed Group="Developer" Permissions="None View Modify Execute AddRemoveChildren " />
+    <Allowed Group="Watch" Permissions="None View " />
+    <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify AddRemoveChildren " />
+    <Denied Group="Administrator" Permissions="None " />
+    <Denied Group="Service" Permissions="None " />
+    <Denied Group="Developer" Permissions="None " />
+    <Denied Group="Watch" Permissions="None Modify Execute AddRemoveChildren " />
+    <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+    <Object Name="cert">
+      <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify AddRemoveChildren " />
+      <Allowed Group="Developer" Permissions="None Modify " />
+      <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+      <Denied Group="Developer" Permissions="None " />
+      <Object Name="export">
+        <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify AddRemoveChildren " />
+        <Allowed Group="Developer" Permissions="None Modify " />
+        <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+        <Denied Group="Developer" Permissions="None " />
+      </Object>
+      <Object Name="import">
+        <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify AddRemoveChildren " />
+        <Allowed Group="Developer" Permissions="None Modify " />
+        <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+        <Denied Group="Developer" Permissions="None " />
+      </Object>
+    </Object>
+    <Object Name="OPCUAClient">
+      <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify AddRemoveChildren " />
+      <Allowed Group="Developer" Permissions="None Modify " />
+      <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+      <Denied Group="Developer" Permissions="None " />
+      <Object Name="Intermediate">
+        <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify AddRemoveChildren " />
+        <Allowed Group="Developer" Permissions="None Modify " />
+        <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+        <Denied Group="Developer" Permissions="None " />
+      </Object>
+    </Object>
+    <Object Name="OPCUAServer">
+      <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify AddRemoveChildren " />
+      <Allowed Group="Developer" Permissions="None Modify " />
+      <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+      <Denied Group="Developer" Permissions="None " />
+      <Object Name="Intermediate">
+        <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify AddRemoveChildren " />
+        <Allowed Group="Developer" Permissions="None Modify " />
+        <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+        <Denied Group="Developer" Permissions="None " />
+      </Object>
+    </Object>
+    <Object Name="PlcLogic">
+      <Allowed Group="Administrator" Permissions="None " />
+      <Allowed Group="Service" Permissions="None " />
+      <Allowed Group="Developer" Permissions="None Modify " />
+      <Allowed Group="Watch" Permissions="None " />
+      <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify AddRemoveChildren " />
+      <Denied Group="Administrator" Permissions="None " />
+      <Denied Group="Service" Permissions="None " />
+      <Denied Group="Developer" Permissions="None " />
+      <Denied Group="Watch" Permissions="None " />
+      <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+      <Object Name="ac_persistence">
+        <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify AddRemoveChildren " />
+        <Allowed Group="Developer" Permissions="None Modify " />
+        <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+        <Denied Group="Developer" Permissions="None " />
+      </Object>
+      <Object Name="alarms">
+        <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify AddRemoveChildren " />
+        <Allowed Group="Developer" Permissions="None Modify " />
+        <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+        <Denied Group="Developer" Permissions="None " />
+      </Object>
+      <Object Name="Application">
+        <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify AddRemoveChildren " />
+        <Allowed Group="Developer" Permissions="None Modify " />
+        <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+        <Denied Group="Developer" Permissions="None " />
+      </Object>
+      <Object Name="trend">
+        <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify AddRemoveChildren " />
+        <Allowed Group="Developer" Permissions="None Modify " />
+        <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+        <Denied Group="Developer" Permissions="None " />
+      </Object>
+      <Object Name="visu">
+        <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify AddRemoveChildren " />
+        <Allowed Group="Developer" Permissions="None Modify " />
+        <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+        <Denied Group="Developer" Permissions="None " />
+      </Object>
+      <Object Name="_cnc">
+        <Allowed Group="Anonymous_OPCUAServer" Permissions="None View Modify AddRemoveChildren " />
+        <Allowed Group="Developer" Permissions="None Modify " />
+        <Denied Group="Anonymous_OPCUAServer" Permissions="None " />
+        <Denied Group="Developer" Permissions="None " />
+      </Object>
+    </Object>
+  </Object>
+</DeviceRightsManagement>
